@@ -6,8 +6,7 @@ html, body{
     width: 100vw;
     height: 100vh;
 
-    background-image: url(back.jpg);
-    background-repeat: no-repeat;
+    background: url(back.jpg) no-repeat center center/cover;
 
     display: flex;
     align-items: center;
@@ -15,8 +14,9 @@ html, body{
 }
 
 .container {
-    width: 580px;
-    height: 400px;
+    width: 65%;
+
+    padding: 30px;
 
     background-color: antiquewhite;
     border-radius: 15px;
@@ -24,21 +24,32 @@ html, body{
     border-top: 5px solid black;
     box-shadow: 7px 7px 7px 7px  rgba(0, 0, 0, 0.415);
 
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
 }
 
-.container h1 {
+.ask {
     font-size: 30px;
     text-align: center;
-    padding-bottom: 10px;
-    border-bottom: solid 3px black;
-    width: 90%;
+    margin-bottom: 30px;
 }
 
-.question {
-    display: block;
+.question .tittle {
+    padding: 18px 0px;
+    font-size: 26px;
+    cursor: pointer;
+    border-bottom: solid 1px black;
+
+    position: relative;
+}
+
+.question .answer {
+    width: 100%;
+    line-height: 1.5;
+    height: auto;
+    overflow:hidden;
+    transition: .5s;
+
+    font-size: 22px;
+    border-bottom: solid 3px black;
+    padding-top: 15px;
 }
 
